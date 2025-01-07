@@ -1,0 +1,470 @@
+[gd_scene load_steps=24 format=3 uid="uid://dubuovxek6dps"]
+
+[ext_resource type="PackedScene" uid="uid://gxj2tuakqlhx" path="res://player.tscn" id="1_3fiuw"]
+[ext_resource type="PackedScene" uid="uid://cle0fcqhwsto1" path="res://simple_tree.blend" id="1_skpvk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fe2p5"]
+sky_top_color = Color(0.491196, 0.437769, 0.391103, 1)
+sky_horizon_color = Color(0.677083, 0.64896, 0.635711, 1)
+ground_bottom_color = Color(0.217137, 0.158072, 0.151741, 1)
+ground_horizon_color = Color(0.677083, 0.64896, 0.635711, 1)
+
+[sub_resource type="Sky" id="Sky_myfml"]
+sky_material = SubResource("ProceduralSkyMaterial_fe2p5")
+
+[sub_resource type="Environment" id="Environment_pj4gp"]
+background_mode = 2
+sky = SubResource("Sky_myfml")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pw4px"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8v5cr"]
+albedo_color = Color(0.176471, 0.384314, 0.164706, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vdf5u"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ui18w"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_c5vko"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8mg0g"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kofea"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6yqmv"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="PrismMesh" id="PrismMesh_doyru"]
+left_to_right = 0.0
+size = Vector3(1, 1, 0.68)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vcb8l"]
+data = PackedVector3Array(-0.5, 0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, -0.5, -0.34, 0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, 0.34, -0.5, -0.5, -0.34, -0.5, -0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, -0.34, 0.5, -0.5, 0.34, 0.5, -0.5, -0.34, -0.5, -0.5, -0.34)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_82n6v"]
+data = PackedVector3Array(-0.5, 0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, -0.5, -0.34, 0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, 0.34, -0.5, -0.5, -0.34, -0.5, -0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, -0.34, 0.5, -0.5, 0.34, 0.5, -0.5, -0.34, -0.5, -0.5, -0.34)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ngspx"]
+data = PackedVector3Array(-0.5, 0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, -0.5, -0.34, 0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, 0.5, -0.5, -0.34, 0.5, -0.5, 0.34, -0.5, 0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, -0.34, -0.5, 0.5, 0.34, -0.5, -0.5, 0.34, -0.5, -0.5, -0.34, -0.5, -0.5, 0.34, 0.5, -0.5, 0.34, -0.5, -0.5, -0.34, 0.5, -0.5, 0.34, 0.5, -0.5, -0.34, -0.5, -0.5, -0.34)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qu1s6"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8kb8n"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_c3xoj"]
+
+[sub_resource type="GDScript" id="GDScript_o8kje"]
+script/source = "extends MeshInstance3D
+
+
+@export var segments = 6
+@export var height = 4
+@export var radius = 1
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	mesh = ArrayMesh.new()
+	var surface_array_cap = []
+	surface_array_cap.resize(Mesh.ARRAY_MAX)
+	var verts_cap = PackedVector3Array()
+	var norms_cap = PackedVector3Array()
+	var index_cap = PackedInt32Array()
+	
+	var alpha = 2 * PI / segments
+	
+
+	for i in range(segments):
+		verts_cap.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), height/2))
+		norms_cap.push_back(Vector3(0,0,1))
+		index_cap.push_back(i+1)
+		index_cap.push_back(i)
+		index_cap.push_back(segments)
+	
+	verts_cap.push_back(Vector3(0,0,height/2))
+	norms_cap.push_back(Vector3(0,0,1))
+	index_cap.push_back(0)
+	index_cap.push_back(segments-1)
+	index_cap.push_back(segments)
+	
+	surface_array_cap[Mesh.ARRAY_VERTEX] = verts_cap
+	surface_array_cap[Mesh.ARRAY_INDEX] = index_cap
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_cap)
+	
+	\"\"\"bottom\"\"\"
+	
+	
+	var surface_array_bot = []
+	surface_array_bot.resize(Mesh.ARRAY_MAX)
+	var verts_bot = PackedVector3Array()
+	var norms_bot = PackedVector3Array()
+	var index_bot = PackedInt32Array()
+	
+	
+
+	for i in range(segments):
+		verts_bot.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), -height/2))
+		norms_bot.push_back(Vector3(0,0,-1))
+		index_bot.push_back(i)
+		index_bot.push_back(i+1)
+		index_bot.push_back(segments)
+	
+	verts_bot.push_back(Vector3(0,0,-height/2))
+	norms_bot.push_back(Vector3(0,0,-1))
+	index_bot.push_back(0)
+	index_bot.push_back(segments)
+	index_bot.push_back(segments-1)
+
+
+	
+	surface_array_bot[Mesh.ARRAY_VERTEX] = verts_bot
+	surface_array_bot[Mesh.ARRAY_INDEX] = index_bot
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_bot)
+	
+
+	var surface_array_lats = []
+	surface_array_lats.resize(Mesh.ARRAY_MAX)
+	var verts_lats = PackedVector3Array()
+	var norms_lats = PackedVector3Array()
+	var index_lats = PackedInt32Array()
+	
+	for i in range(segments):
+		verts_lats.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), -height/2))
+		norms_lats.push_back(Vector3(0,1,0))
+		index_lats.push_back(i)
+		verts_lats.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), height/2))
+		norms_lats.push_back(Vector3(0,1,0))
+		index_lats.push_back(i+1)
+		verts_lats.push_back(Vector3(radius * cos(alpha * (1+i)), radius * sin(alpha * (1+i)), -height/2))
+		norms_lats.push_back(Vector3(0,1,0))
+		index_lats.push_back(i+2)
+		index_lats.push_back(i+2)
+		index_lats.push_back(i+1)
+		verts_lats.push_back(Vector3(radius * cos(alpha * (1+i)), radius * sin(alpha * (1+i)), height/2))
+		norms_lats.push_back(Vector3(0,1,0))
+		index_lats.push_back(i+3)
+
+
+	surface_array_lats[Mesh.ARRAY_VERTEX] = verts_lats
+	surface_array_lats[Mesh.ARRAY_NORMAL] = norms_lats
+	surface_array_lats[Mesh.ARRAY_INDEX] = index_lats
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_lats)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if Input.is_action_pressed(\"ui_left\"):
+		rotation.y += PI * delta
+	if Input.is_action_pressed(\"ui_right\"):
+		rotation.y -= PI * delta
+	if Input.is_action_pressed(\"ui_up\"):
+		rotation.x += PI * delta
+	if Input.is_action_pressed(\"ui_down\"):
+		rotation.x -= PI * delta
+	pass
+"
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_0hdl2"]
+
+[sub_resource type="GDScript" id="GDScript_ey4mw"]
+script/source = "extends MeshInstance3D
+
+
+@export var segments = 6
+@export var height = 4
+@export var radius = 1
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	mesh = ArrayMesh.new()
+	var surface_array_cap = []
+	surface_array_cap.resize(Mesh.ARRAY_MAX)
+	var verts_cap = PackedVector3Array()
+	var norms_cap = PackedVector3Array()
+	var index_cap = PackedInt32Array()
+	
+	var alpha = 2 * PI / segments
+	
+
+	for i in range(segments):
+		verts_cap.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), height/2))
+		norms_cap.push_back(Vector3(0,0,1))
+		index_cap.push_back(i+1)
+		index_cap.push_back(i)
+		index_cap.push_back(segments)
+	
+	verts_cap.push_back(Vector3(0,0,height/2))
+	norms_cap.push_back(Vector3(0,0,1))
+	index_cap.push_back(0)
+	index_cap.push_back(segments-1)
+	index_cap.push_back(segments)
+	
+	surface_array_cap[Mesh.ARRAY_VERTEX] = verts_cap
+	surface_array_cap[Mesh.ARRAY_INDEX] = index_cap
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_cap)
+	
+	\"\"\"bottom\"\"\"
+	
+	
+	var surface_array_bot = []
+	surface_array_bot.resize(Mesh.ARRAY_MAX)
+	var verts_bot = PackedVector3Array()
+	var norms_bot = PackedVector3Array()
+	var index_bot = PackedInt32Array()
+	
+	
+
+	for i in range(segments):
+		verts_bot.push_back(Vector3(radius * cos(alpha * i), radius * sin(alpha * i), -height/2))
+		norms_bot.push_back(Vector3(0,0,-1))
+		index_bot.push_back(i)
+		index_bot.push_back(i+1)
+		index_bot.push_back(segments)
+	
+	verts_bot.push_back(Vector3(0,0,-height/2))
+	norms_bot.push_back(Vector3(0,0,-1))
+	index_bot.push_back(0)
+	index_bot.push_back(segments)
+	index_bot.push_back(segments-1)
+
+
+	
+	surface_array_bot[Mesh.ARRAY_VERTEX] = verts_bot
+	surface_array_bot[Mesh.ARRAY_INDEX] = index_bot
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_bot)
+	
+
+
+	var surface_array_lats = []
+	surface_array_lats.resize(Mesh.ARRAY_MAX)
+	var verts_lats = PackedVector3Array()
+	var norms_lats = PackedVector3Array()
+	var index_lats = PackedInt32Array()
+
+
+	for i in range(segments):
+	# Calculate current and next angle
+		var angle = alpha * i
+		var next_angle = alpha * (i + 1)
+
+	# Bottom circle vertex
+		var bottom_current = Vector3(radius * cos(angle), radius * sin(angle), -height / 2)
+		var bottom_next = Vector3(radius * cos(next_angle), radius * sin(next_angle), -height / 2)
+	# Top circle vertex
+		var top_current = Vector3(radius * cos(angle), radius * sin(angle), height / 2)
+		var top_next = Vector3(radius * cos(next_angle), radius * sin(next_angle), height / 2)
+
+	# Add vertices
+		verts_lats.append(bottom_current)
+		verts_lats.append(top_current)
+		verts_lats.append(bottom_next)
+		verts_lats.append(top_next)
+
+# Calculate normals for sides (point outward)
+		var normal_current = Vector3(cos(angle), sin(angle), 0).normalized()
+		var normal_next = Vector3(cos(next_angle), sin(next_angle), 0).normalized()
+
+	# Add normals
+		norms_lats.append(normal_current)
+		norms_lats.append(normal_current)
+		norms_lats.append(normal_next)
+		norms_lats.append(normal_next)
+
+	# Add indices for two triangles forming a quad
+		var base_index = i * 4
+		index_lats.append(base_index)     # bottom_current
+		index_lats.append(base_index + 1) # top_current
+		index_lats.append(base_index + 2) # bottom_next
+
+		index_lats.append(base_index + 2) # bottom_next
+		index_lats.append(base_index + 1) # top_current
+		index_lats.append(base_index + 3) # top_next
+
+
+
+	surface_array_lats[Mesh.ARRAY_VERTEX] = verts_lats
+	surface_array_lats[Mesh.ARRAY_NORMAL] = norms_lats
+	surface_array_lats[Mesh.ARRAY_INDEX] = index_lats
+	
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array_lats)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if Input.is_action_pressed(\"ui_left\"):
+		rotation.y += PI * delta
+	if Input.is_action_pressed(\"ui_right\"):
+		rotation.y -= PI * delta
+	if Input.is_action_pressed(\"ui_up\"):
+		rotation.x += PI * delta
+	if Input.is_action_pressed(\"ui_down\"):
+		rotation.x -= PI * delta
+	pass
+"
+
+[node name="Worldroot" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.914254, -0.385313, 0.125196, 0, 0.309017, 0.951057, -0.405142, 0.869507, -0.28252, 0, 0, 0)
+light_color = Color(0.996934, 0.994201, 0.846535, 1)
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pj4gp")
+
+[node name="Stage" type="Node3D" parent="."]
+
+[node name="Floor" type="MeshInstance3D" parent="Stage"]
+transform = Transform3D(128, 0, 0, 0, 128, 0, 0, 0, 128, 0, 0, 0)
+mesh = SubResource("PlaneMesh_pw4px")
+surface_material_override/0 = SubResource("StandardMaterial3D_8v5cr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_vdf5u")
+
+[node name="Terrain" type="MeshInstance3D" parent="Stage"]
+transform = Transform3D(80, 0, 0, 0, 95.5788, 0, 0, 0, 155.66, 87.2755, 43.5953, 48.6429)
+mesh = SubResource("BoxMesh_ui18w")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(1.10489, 0, 0, 0, 0.549015, 0, 0, 0, 0.82809, -0.0715491, -0.211134, -0.715954)
+mesh = SubResource("BoxMesh_ui18w")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_c5vko")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(1.2874, -0.0168461, 0, 0.302991, 0.0501465, 0, 0, 0, 0.18992, -1.19968, -0.0887323, -0.987326)
+mesh = SubResource("BoxMesh_ui18w")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8mg0g")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(-4.24986e-08, 0, 0.200759, 0, 0.231415, 0, -0.499682, 0, -4.51007e-09, 0.367779, 0.174592, -0.687574)
+mesh = SubResource("BoxMesh_kofea")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D8/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_6yqmv")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(-0.571004, 0, -2.27632e-08, 0, 0.24444, 0, 2.56553e-08, 0, -0.13382, -0.00940645, 0.166188, -0.890532)
+mesh = SubResource("PrismMesh_doyru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D7/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_vcb8l")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(-2.49594e-08, 0, 0.260381, 0, 0.208465, 0, -0.293462, 0, -5.84947e-09, 0.366861, 0.394956, -0.645315)
+mesh = SubResource("PrismMesh_doyru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D6/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_82n6v")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(-4.37114e-08, 0, -1.1875, 0, 0.261564, 0, 0.513941, 0, -2.66773e-08, -2.26919, -0.334981, -0.25627)
+mesh = SubResource("PrismMesh_doyru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D5/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ngspx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(1, 0, 0, 0, 0.261564, 0, 0, 0, 0.610305, -2.17886, -0.334981, -0.817598)
+mesh = SubResource("BoxMesh_ui18w")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qu1s6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8kb8n")
+
+[node name="simple_tree" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.017, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.45006, -0.438075, 0.374963)
+
+[node name="simple_tree2" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.0168062, 0, -0.00150588, 0, 0.01, 0, 0.00256, 0, 0.00988597, -2.10553, -0.438075, 0.392394)
+
+[node name="simple_tree3" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.02, 0, 0, 0, 0.012, 0, 0, 0, 0.012, -1.68373, -0.434466, 0.442708)
+
+[node name="simple_tree4" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.0186509, 0, 0.0020989, 0, 0.011, 0, -0.00362537, 0, 0.0107979, -1.61717, -0.436271, 0.257981)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stage/Terrain/simple_tree4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/Terrain/simple_tree4/StaticBody3D"]
+transform = Transform3D(2.06, 0, 0, 0, 2.06, 0, 0, 0, 2.06, 0, 0.220018, 0)
+shape = SubResource("CylinderShape3D_c3xoj")
+
+[node name="simple_tree5" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.017, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.86839, -0.438075, 0.342353)
+
+[node name="simple_tree6" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.017, 0, 1.74846e-09, 0, 0.01, 0, -2.97238e-09, 0, 0.01, -2.05595, -0.438075, 0.213534)
+
+[node name="simple_tree7" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.017, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -2.44931, -0.438075, 0.2268)
+
+[node name="simple_tree8" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.02, 0, 0, 0, 0.012, 0, 0, 0, 0.012, -2.25803, -0.434466, 0.278986)
+
+[node name="simple_tree9" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.017, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -2.27194, -0.438075, 0.424051)
+
+[node name="simple_tree10" parent="Stage/Terrain" instance=ExtResource("1_skpvk")]
+transform = Transform3D(0.024, 0, 0, 0, 0.014, 0, 0, 0, 0.014, -2.50012, -0.430857, 0.380911)
+
+[node name="meshinstant3b" type="MeshInstance3D" parent="Stage/Terrain"]
+transform = Transform3D(0.0125, 0, 0, 0, 0.0104626, 0, 0, 0, 0.00642426, -1.13769, -0.440388, -0.338746)
+visible = false
+skeleton = NodePath("../..")
+script = SubResource("GDScript_o8kje")
+
+[node name="worldborder" type="StaticBody3D" parent="Stage"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stage/worldborder"]
+transform = Transform3D(12.5, 0, 0, 0, 12.5, 0, 0, 0, 12.5, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_0hdl2")
+
+[node name="Eigenbau" type="MeshInstance3D" parent="Stage"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.31307, -5.59038)
+script = SubResource("GDScript_ey4mw")
+
+[node name="Player" parent="." instance=ExtResource("1_3fiuw")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.01518, 0)
